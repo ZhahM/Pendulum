@@ -1,11 +1,11 @@
 #include<SFML/Graphics.hpp>
 #include<iostream>
-#include"/Users/JoanPaulo/Desktop/PhM/Code/penduluum/penduluum/button.hpp"
+#include"include/button.hpp"
 #include<cmath>
 #include<iomanip>
 #include<sstream>
-#include"dragger.hpp"
-#include"additional.hpp"
+#include"include/dragger.hpp"
+#include"include/additional.hpp"
 //constants
 const float g = 9.8*1000.f;
 const float PI = 3.14159;
@@ -24,7 +24,7 @@ int main()
     //loading the FONT BUTLER
     
     sf::Font butler;
-    butler.loadFromFile("butler.otf");
+    butler.loadFromFile("assets/butler.otf");
     
     
     //window
@@ -76,10 +76,10 @@ int main()
     
     //texture
     sf::Texture backgroundTexture;
-    backgroundTexture.loadFromFile("backoftheclub.png");
+    backgroundTexture.loadFromFile("assets/backoftheclub.png");
     sf::Sprite background(backgroundTexture);
     sf::Texture bobTexture;
-    bobTexture.loadFromFile("shar.png");
+    bobTexture.loadFromFile("assets/shar.png");
     bob.setTexture(&bobTexture);
     
     
