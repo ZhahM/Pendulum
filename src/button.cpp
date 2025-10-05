@@ -1,4 +1,4 @@
-#include"/Users/JoanPaulo/Desktop/PhM/Code/penduluum/penduluum/button.hpp"
+#include"include/button.hpp"
 Button::Button(float Butx, float Buty, float Butwidth, float Butheight, const std::string& Butlabel)
 {
     Butfont.loadFromFile("butler.otf");
